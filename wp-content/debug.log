@@ -1,1 +1,348 @@
-
+[24-Aug-2024 15:52:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_cart_contents_total() on null in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php:21
+Stack trace:
+#0 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(434): CustomWoocommerceFeature->load_shortcode(Array, '', 'custom-cart-mes...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(custom...', 'do_shortcode_ta...', '[custom-cart-me...')
+#3 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): do_shortcode('[custom-cart-me...')
+#4 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[custom-cart-me...', Array)
+#5 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1871): apply_filters('the_content', '<!-- wp:shortco...')
+#6 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(575): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#7 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#8 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#9 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(547): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(2925): rest_do_request(Object(WP_REST_Request))
+#11 [internal function]: rest_preload_api_request(Array, '/wp/v2/pages/8?...')
+#12 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\block-editor.php(753): array_reduce(Array, 'rest_preload_ap...', Array)
+#13 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\edit-form-blocks.php(80): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#14 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\post.php(187): require('C:\\Users\\LENOVO...')
+#15 {main}
+  thrown in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php on line 21
+[24-Aug-2024 15:54:16 UTC] PHP Warning:  wp_version_check(): Ocurrió un error inesperado. Algo debe estar mal con WordPress.org o la configuración de este servidor. Si continúas con problemas, por favor visita los <a href="https://wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura a WordPress.org. Por favor contacta al administrador de tu servidor.) in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\functions.php on line 6085
+[24-Aug-2024 16:03:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_cart_contents_total() on null in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php:21
+Stack trace:
+#0 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(434): CustomWoocommerceFeature->load_shortcode(Array, '', 'custom-cart-mes...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(custom...', 'do_shortcode_ta...', '[custom-cart-me...')
+#3 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): do_shortcode('[custom-cart-me...')
+#4 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[custom-cart-me...', Array)
+#5 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1871): apply_filters('the_content', '<!-- wp:shortco...')
+#6 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(575): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#7 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#8 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#9 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(547): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(2925): rest_do_request(Object(WP_REST_Request))
+#11 [internal function]: rest_preload_api_request(Array, '/wp/v2/pages/8?...')
+#12 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\block-editor.php(753): array_reduce(Array, 'rest_preload_ap...', Array)
+#13 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\edit-form-blocks.php(80): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#14 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\post.php(187): require('C:\\Users\\LENOVO...')
+#15 {main}
+  thrown in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php on line 21
+[24-Aug-2024 16:04:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_cart_contents_total() on null in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php:21
+Stack trace:
+#0 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(434): CustomWoocommerceFeature->load_shortcode(Array, '', 'custom-cart-mes...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(custom...', 'do_shortcode_ta...', '[custom-cart-me...')
+#3 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): do_shortcode('[custom-cart-me...')
+#4 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[custom-cart-me...', Array)
+#5 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1871): apply_filters('the_content', '<!-- wp:shortco...')
+#6 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(575): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#7 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#8 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#9 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(547): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(2925): rest_do_request(Object(WP_REST_Request))
+#11 [internal function]: rest_preload_api_request(Array, '/wp/v2/pages/8?...')
+#12 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\block-editor.php(753): array_reduce(Array, 'rest_preload_ap...', Array)
+#13 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\edit-form-blocks.php(80): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#14 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\post.php(187): require('C:\\Users\\LENOVO...')
+#15 {main}
+  thrown in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php on line 21
+[24-Aug-2024 16:04:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_cart_contents_total() on null in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php:21
+Stack trace:
+#0 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(434): CustomWoocommerceFeature->load_shortcode(Array, '', 'custom-cart-mes...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(custom...', 'do_shortcode_ta...', '[custom-cart-me...')
+#3 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): do_shortcode('[custom-cart-me...')
+#4 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[custom-cart-me...', Array)
+#5 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1871): apply_filters('the_content', '<!-- wp:shortco...')
+#6 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(575): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#7 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#8 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#9 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(547): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(2925): rest_do_request(Object(WP_REST_Request))
+#11 [internal function]: rest_preload_api_request(Array, '/wp/v2/pages/8?...')
+#12 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\block-editor.php(753): array_reduce(Array, 'rest_preload_ap...', Array)
+#13 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\edit-form-blocks.php(80): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#14 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\post.php(187): require('C:\\Users\\LENOVO...')
+#15 {main}
+  thrown in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php on line 21
+[24-Aug-2024 16:07:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_cart_contents_total() on null in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php:21
+Stack trace:
+#0 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(434): CustomWoocommerceFeature->load_shortcode(Array, '', 'custom-cart-mes...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(custom...', 'do_shortcode_ta...', '<div data-block...')
+#3 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): do_shortcode('<div data-block...')
+#4 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('<div data-block...', Array)
+#5 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1871): apply_filters('the_content', '<!-- wp:woocomm...')
+#6 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(958): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#7 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Posts_Controller->update_item(Object(WP_REST_Request))
+#8 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#9 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(420): WP_REST_Server->serve_request('/wp/v2/pages/8')
+#11 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#12 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#13 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#14 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#15 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#16 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\functions.php(1336): WP->main('')
+#17 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-blog-header.php(16): wp()
+#18 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\index.php(17): require('C:\\Users\\LENOVO...')
+#19 {main}
+  thrown in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php on line 21
+[24-Aug-2024 16:08:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_cart_contents_total() on null in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php:21
+Stack trace:
+#0 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(434): CustomWoocommerceFeature->load_shortcode(Array, '', 'custom-cart-mes...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(custom...', 'do_shortcode_ta...', '<div data-block...')
+#3 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): do_shortcode('<div data-block...')
+#4 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('<div data-block...', Array)
+#5 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-revisions-controller.php(632): apply_filters('the_content', '<!-- wp:woocomm...')
+#6 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-autosaves-controller.php(451): WP_REST_Revisions_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#7 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-autosaves-controller.php(253): WP_REST_Autosaves_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#8 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Autosaves_Controller->create_item(Object(WP_REST_Request))
+#9 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#10 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#11 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(420): WP_REST_Server->serve_request('/wp/v2/pages/8/...')
+#12 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#13 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#14 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#15 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#16 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#17 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\functions.php(1336): WP->main('')
+#18 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-blog-header.php(16): wp()
+#19 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\index.php(17): require('C:\\Users\\LENOVO...')
+#20 {main}
+  thrown in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php on line 21
+[24-Aug-2024 16:10:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_cart_contents_total() on null in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php:21
+Stack trace:
+#0 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(434): CustomWoocommerceFeature->load_shortcode(Array, '', 'custom-cart-mes...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(custom...', 'do_shortcode_ta...', '[custom-cart-me...')
+#3 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): do_shortcode('[custom-cart-me...')
+#4 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[custom-cart-me...', Array)
+#5 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1871): apply_filters('the_content', '<!-- wp:shortco...')
+#6 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(958): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#7 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Posts_Controller->update_item(Object(WP_REST_Request))
+#8 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#9 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(420): WP_REST_Server->serve_request('/wp/v2/pages/8')
+#11 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#12 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#13 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#14 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#15 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#16 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\functions.php(1336): WP->main('')
+#17 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-blog-header.php(16): wp()
+#18 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\index.php(17): require('C:\\Users\\LENOVO...')
+#19 {main}
+  thrown in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php on line 21
+[24-Aug-2024 16:10:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_cart_contents_total() on null in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php:21
+Stack trace:
+#0 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(434): CustomWoocommerceFeature->load_shortcode(Array, '', 'custom-cart-mes...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(custom...', 'do_shortcode_ta...', '[custom-cart-me...')
+#3 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): do_shortcode('[custom-cart-me...')
+#4 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[custom-cart-me...', Array)
+#5 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-revisions-controller.php(632): apply_filters('the_content', '<!-- wp:shortco...')
+#6 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-autosaves-controller.php(451): WP_REST_Revisions_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#7 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-autosaves-controller.php(253): WP_REST_Autosaves_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#8 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Autosaves_Controller->create_item(Object(WP_REST_Request))
+#9 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#10 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(439): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#11 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(420): WP_REST_Server->serve_request('/wp/v2/pages/8/...')
+#12 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): rest_api_loaded(Object(WP))
+#13 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#14 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#15 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp.php(418): do_action_ref_array('parse_request', Array)
+#16 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp.php(813): WP->parse_request('')
+#17 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\functions.php(1336): WP->main('')
+#18 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-blog-header.php(16): wp()
+#19 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\index.php(17): require('C:\\Users\\LENOVO...')
+#20 {main}
+  thrown in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php on line 21
+[24-Aug-2024 16:13:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_cart_contents_total() on null in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php:21
+Stack trace:
+#0 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(434): CustomWoocommerceFeature->load_shortcode(Array, '', 'custom-cart-mes...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(custom...', 'do_shortcode_ta...', '[custom-cart-me...')
+#3 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): do_shortcode('[custom-cart-me...')
+#4 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[custom-cart-me...', Array)
+#5 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1871): apply_filters('the_content', '<!-- wp:shortco...')
+#6 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(575): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#7 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#8 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#9 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(547): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(2925): rest_do_request(Object(WP_REST_Request))
+#11 [internal function]: rest_preload_api_request(Array, '/wp/v2/pages/8?...')
+#12 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\block-editor.php(753): array_reduce(Array, 'rest_preload_ap...', Array)
+#13 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\edit-form-blocks.php(80): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#14 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\post.php(187): require('C:\\Users\\LENOVO...')
+#15 {main}
+  thrown in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php on line 21
+[24-Aug-2024 16:13:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_cart_contents_total() on null in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php:21
+Stack trace:
+#0 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(434): CustomWoocommerceFeature->load_shortcode(Array, '', 'custom-cart-mes...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(custom...', 'do_shortcode_ta...', '[custom-cart-me...')
+#3 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): do_shortcode('[custom-cart-me...')
+#4 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[custom-cart-me...', Array)
+#5 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1871): apply_filters('the_content', '<!-- wp:shortco...')
+#6 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(575): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#7 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#8 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#9 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(547): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(2925): rest_do_request(Object(WP_REST_Request))
+#11 [internal function]: rest_preload_api_request(Array, '/wp/v2/pages/8?...')
+#12 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\block-editor.php(753): array_reduce(Array, 'rest_preload_ap...', Array)
+#13 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\edit-form-blocks.php(80): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#14 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\post.php(187): require('C:\\Users\\LENOVO...')
+#15 {main}
+  thrown in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php on line 21
+[24-Aug-2024 16:14:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_cart_contents_total() on null in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php:21
+Stack trace:
+#0 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(434): CustomWoocommerceFeature->load_shortcode(Array, '', 'custom-cart-mes...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(custom...', 'do_shortcode_ta...', '[custom-cart-me...')
+#3 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-hook.php(324): do_shortcode('[custom-cart-me...')
+#4 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters('[custom-cart-me...', Array)
+#5 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1871): apply_filters('the_content', '<!-- wp:shortco...')
+#6 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(575): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#7 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1230): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#8 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api\class-wp-rest-server.php(1063): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#9 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(547): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\rest-api.php(2925): rest_do_request(Object(WP_REST_Request))
+#11 [internal function]: rest_preload_api_request(Array, '/wp/v2/pages/8?...')
+#12 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\block-editor.php(753): array_reduce(Array, 'rest_preload_ap...', Array)
+#13 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\edit-form-blocks.php(80): block_editor_rest_api_preload(Array, Object(WP_Block_Editor_Context))
+#14 C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-admin\post.php(187): require('C:\\Users\\LENOVO...')
+#15 {main}
+  thrown in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\plugins\custom-woocommerce-features\custom-woocommerce-features.php.php on line 21
+[25-Aug-2024 20:01:23 UTC] Automatic updates starting...
+[25-Aug-2024 20:01:26 UTC] Automatic updates complete.
+[25-Aug-2024 23:03:01 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wpdb.php on line 1982
+[25-Aug-2024 23:08:20 UTC] PHP Warning:  Undefined variable $date_query in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 39
+[25-Aug-2024 23:08:20 UTC] WordPress database error Incorrect DATETIME value: '' for query 
+        SELECT ID
+        FROM wp_posts
+        WHERE post_type = 'shop_order'
+        AND post_status = 'wc-completed'
+        AND post_date >= ''
+     made by do_action('toplevel_page_completed-orders'), WP_Hook->do_action, WP_Hook->apply_filters, storefront_chield_display_completed_orders
+[25-Aug-2024 23:11:15 UTC] PHP Warning:  Undefined variable $start_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 37
+[25-Aug-2024 23:11:15 UTC] PHP Warning:  Undefined variable $end_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 37
+[25-Aug-2024 23:11:47 UTC] PHP Warning:  Undefined variable $start_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 37
+[25-Aug-2024 23:11:47 UTC] PHP Warning:  Undefined variable $end_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 37
+[25-Aug-2024 23:13:28 UTC] PHP Warning:  Undefined variable $start_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 37
+[25-Aug-2024 23:13:28 UTC] PHP Warning:  Undefined variable $end_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 37
+[25-Aug-2024 23:14:05 UTC] PHP Warning:  Undefined variable $start_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 37
+[25-Aug-2024 23:14:05 UTC] PHP Warning:  Undefined variable $end_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 37
+[25-Aug-2024 23:23:37 UTC] Automatic updates starting...
+[25-Aug-2024 23:23:37 UTC] Automatic updates complete.
+[26-Aug-2024 02:16:14 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '    ' at line 6 for query 
+        SELECT ID
+        FROM wp_posts
+        WHERE post_type = 'shop_order_placehold'
+        AND comment_status = 'closed'
+        AND post_date BETWEEN '2024-07-26' AND '2024-08-26'
+     made by do_action('toplevel_page_completed-orders'), WP_Hook->do_action, WP_Hook->apply_filters, storefront_chield_display_completed_orders
+[26-Aug-2024 02:34:04 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '    ' at line 6 for query 
+        SELECT ID
+        FROM wp_posts
+        WHERE post_type = 'shop_order_placehold'
+        AND comment_status = 'closed'
+        AND post_date BETWEEN '2024-09-26' AND '2024-08-26'
+     made by do_action('toplevel_page_completed-orders'), WP_Hook->do_action, WP_Hook->apply_filters, storefront_chield_display_completed_orders
+[26-Aug-2024 02:34:12 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '    ' at line 6 for query 
+        SELECT ID
+        FROM wp_posts
+        WHERE post_type = 'shop_order_placehold'
+        AND comment_status = 'closed'
+        AND post_date BETWEEN '2024-09-26' AND '2024-08-26'
+     made by do_action('toplevel_page_completed-orders'), WP_Hook->do_action, WP_Hook->apply_filters, storefront_chield_display_completed_orders
+[26-Aug-2024 02:34:17 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '    ' at line 6 for query 
+        SELECT ID
+        FROM wp_posts
+        WHERE post_type = 'shop_order_placehold'
+        AND comment_status = 'closed'
+        AND post_date BETWEEN '2024-09-26' AND '2024-08-26'
+     made by do_action('toplevel_page_completed-orders'), WP_Hook->do_action, WP_Hook->apply_filters, storefront_chield_display_completed_orders
+[26-Aug-2024 02:55:00 UTC] PHP Parse error:  syntax error, unexpected single-quoted string "</p>", expecting "," or ";" in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 83
+[26-Aug-2024 02:55:00 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[26-Aug-2024 02:55:00 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[26-Aug-2024 02:55:00 UTC] PHP Parse error:  syntax error, unexpected single-quoted string "</p>", expecting "," or ";" in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 83
+[26-Aug-2024 02:55:01 UTC] PHP Parse error:  syntax error, unexpected single-quoted string "</p>", expecting "," or ";" in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 83
+[26-Aug-2024 02:55:12 UTC] PHP Parse error:  syntax error, unexpected single-quoted string "</p>", expecting "," or ";" in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 83
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$id in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 52
+[26-Aug-2024 02:56:00 UTC] PHP Warning:  Undefined property: stdClass::$post_date in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 02:56:00 UTC] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in C:\Users\LENOVO T460\Local Sites\prueba-tecnica\app\public\wp-content\themes\storefront-child\functions.php on line 75
+[26-Aug-2024 12:08:40 UTC] Automatic updates starting...
+[26-Aug-2024 12:08:42 UTC] Automatic updates complete.

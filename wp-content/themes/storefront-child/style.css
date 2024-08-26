@@ -1,0 +1,29 @@
+/*
+Theme Name: Storefront Child
+Theme URI: http://example.com/storefront-child
+Description: Storefront Child Theme
+Author: David Urdaneta
+Author URI: http://example.com
+Template: storefront
+Version: 1.0.0
+*/
+
+
+/* Aquí puedes agregar tus estilos personalizados */
+
+.related-products ul.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.related-products ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.related-products ul.products li.product {
+    flex: 1 0 30%;
+    max-width: 30%;
+}
